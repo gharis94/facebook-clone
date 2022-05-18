@@ -1,0 +1,29 @@
+.feed{
+    display: flex;
+    margin-left: 10px;
+}
+
+.container{
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 200px;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 1px  5px black;
+    position: relative;
+}
+
+.container > .MuiAvatar-root {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.text{
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+
+}

@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.home-left{
+    flex: .25;
+    height: 90vh;
+}
+.home-center{
+    flex: .50;
+}
+.home-right{
+    flex: .25;
+}

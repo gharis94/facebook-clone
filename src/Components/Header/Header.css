@@ -1,0 +1,41 @@
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.left{
+    flex: .33;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+
+}
+.left > input{
+    padding-left: 20px;
+    height:5vh;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+.center{
+    flex: .33;
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    flex: .33;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+.right-name{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
