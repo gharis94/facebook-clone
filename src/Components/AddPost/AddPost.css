@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     margin-left: 10px;
-    
+    padding: 5px;
 }
 
 .add-post-bottom{
@@ -33,4 +33,57 @@
     background-color: lightgray;
     border-radius: 20px;
     border: none;
+    outline: 0px;
+}
+
+.modal-pop{
+    top: 50%;
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.modal-top{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+.modal-top h2{
+    position: absolute;
+    left: 180px;
+}
+.modal-top .MuiButtonBase-root{
+    position: absolute;
+    right: 5px;
+    font-size: large;
+}
+.modal-body textarea{
+    border: 0px;
+    width: 100%;
+    outline: 0px;
+    
+}
+
+.modal-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.modal-footer input{
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #4267B2;
 }
