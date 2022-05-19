@@ -1,3 +1,7 @@
+.right-bar{
+    position: sticky;
+    top: 100px;
+}
 h4{
     text-align: left;
     color: gray;

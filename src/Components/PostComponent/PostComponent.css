@@ -1,0 +1,46 @@
+.post-componet{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px gray;
+    padding: 10px;  
+
+}
+.post-top{
+    display: flex;
+    justify-content: space-between;
+}
+.top-left{
+    display: flex;
+    
+}
+.time-stamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+.time-stamp span {
+    font-size: 12px;
+}
+.time-stamp p {
+    margin: 0px;
+    font-size: 12px;
+}
+.stamp{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.stamp .MuiSvgIcon-root{
+    font-size: 12px;
+}
+
+.post-componet{
+    border-radius: 10PX;
+}
+
+
+.post-componet img{
+    height: 150px;
+}

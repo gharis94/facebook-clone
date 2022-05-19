@@ -21,6 +21,7 @@ const Rightbar = () => {
       <div className='group'>
         <h4>Group Conservation</h4>
         <ConservationComponent group={true} creategroup={true}/>
+        <ConservationComponent group={true} creategroup={false} name='hello'/>
       </div>
     </div>
   )

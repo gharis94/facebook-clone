@@ -2,15 +2,21 @@
     display: flex;
     padding: 10px;
     background-color: lightgray;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .home-left{
     flex: .25;
     height: 90vh;
+    
+    
+    
 }
 .home-center{
     flex: .50;
 }
 .home-right{
     flex: .25;
+    
 }
