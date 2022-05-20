@@ -40,7 +40,7 @@ const AddPost = () => {
                 </div>
                 <Divider/>
                 <div className='modal-body'>
-                    <textarea rows='4' placeholder={`What's on your mind,name?`}/>
+                    <textarea value={text} onChange={(e)=>handleChange(e)} rows='4' placeholder={`What's on your mind,name?`}/>
                 </div>
                 <div className='modal-bottom'>
                     <div className='bottom-right'>

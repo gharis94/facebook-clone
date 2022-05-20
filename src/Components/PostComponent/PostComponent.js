@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useContext} from 'react'
+import React,{useState,useContext} from 'react'
 import Avatar from '@mui/material/Avatar';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import IconButton from '@mui/material/IconButton';
@@ -52,7 +52,7 @@ const PostComponent = ({title,url}) => {
         </div>
         <div className='post-body'>
             <span>{title}</span>
-            <img src={url}/>
+            <img src={url} alt={title}/>
         </div>
         <div className='post-bottom'>
             <IconButton onClick = {() => increment(like)}>
