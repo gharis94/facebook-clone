@@ -2,7 +2,8 @@ import React,{createContext,useEffect, useState} from 'react';
 
 
 const INITIAL_STATE ={
-    data:[]
+    data:[],
+    comments:[]
 }
 
 export const DataContext = createContext(INITIAL_STATE);
@@ -10,7 +11,7 @@ export const DataContext = createContext(INITIAL_STATE);
 
 export const DataProvider = ({children}) =>{
     const [data,setData] = useState([]);
-
+    const [comments,setComments] = useState([]);
     useEffect(()=>{
         const fetchData = async() =>{
             try{
@@ -25,10 +26,26 @@ export const DataProvider = ({children}) =>{
             
         }
         fetchData();
+    },[]);
+    useEffect(()=>{
+        const fetchComment = async() =>{
+            try{
+                const rsp = await fetch('https://jsonplaceholder.typicode.com/comments');
+                const a = await rsp.json();
+                const comments = a.filter((__, idx) => idx < 3);
+                
+                setComments(comments);
+            }catch(error){
+                console.log(error);
+            }
+            
+        }
+        fetchComment();
     },[])
     return(
         <DataContext.Provider value={{
-            data
+            data,
+            comments
         }}>
             {children}
         </DataContext.Provider>

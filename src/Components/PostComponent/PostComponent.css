@@ -6,7 +6,15 @@
     box-shadow: 1px 1px gray;
     padding: 10px;
     margin-bottom: 10px;
-     
+}
+.post-componetcomments{
+    height: 750px !important;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px gray;
+    padding: 10px;
+    margin-bottom: 10px;    
 
 }
 .post-top{
@@ -39,9 +47,6 @@
     font-size: 12px;
 }
 
-
-
-
 .post-body img{
     
     height: 200px;
@@ -51,4 +56,12 @@
 .post-bottom{
     display: flex;
     justify-content: space-between;
+}
+
+.commenta{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+    box-shadow: 1px 1px gray;
+       
 }

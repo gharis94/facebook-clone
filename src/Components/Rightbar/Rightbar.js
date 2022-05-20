@@ -6,7 +6,7 @@ import {UserContext} from '../../context/UserContext';
 
 const Rightbar = () => {
   const {user} = useContext(UserContext);
-  console.log('user',user)
+  
   return (
     <div className='right-bar'>
       <div className='sponsor'>

@@ -1,0 +1,24 @@
+
+.comment-component{
+    display: flex;
+    align-items:flex-start;
+    position: relative;
+}
+.comment-component .MuiAvatar-root{
+    position: absolute;
+    top: 15px;
+}
+.comment-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.comment-details h4{
+    font-weight: bold;
+}
+.comment-details span{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    outline: 0px;   
+}
