@@ -42,3 +42,12 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width:800px) {
+    .center{
+        display: none;
+    }
+    .right .MuiSvgIcon-root{
+        display: none;
+    }
+}

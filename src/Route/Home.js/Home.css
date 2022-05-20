@@ -4,6 +4,8 @@
     background-color: lightgray;
     height: 100vh;
     overflow: scroll;
+
+    
 }
 
 .home-left{
@@ -12,6 +14,16 @@
     
     
     
+}
+@media screen and (max-width: 800px) {
+    .home-left{
+        display:none;
+    }
+
+    .home-right{
+        display: none;
+    }
+        
 }
 .home-center{
     flex: .50;

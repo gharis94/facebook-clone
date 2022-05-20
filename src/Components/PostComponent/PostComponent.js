@@ -57,7 +57,7 @@ const PostComponent = ({title,url}) => {
         <div className='post-bottom'>
             <IconButton onClick = {() => increment(like)}>
                 <span style={{'fontSize':'14px'}}>{like}</span>
-                <ThumbUpAltIcon style={ {fill:like>1?'blue':''}}/>
+                <ThumbUpAltIcon style={ {fill:like>0?'lightBlue':''}}/>
             </IconButton>
             <IconButton onClick={()=>open()}>
                 <ModeCommentIcon/>
@@ -73,4 +73,4 @@ const PostComponent = ({title,url}) => {
   )
 }
 
-export default PostComponent
+export default PostComponent;
