@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Rightbar.css';
 import Divider from '@mui/material/Divider';
 import ConservationComponent from '../ConservationComponent/ConservationComponent';
+import {UserContext} from '../../context/UserContext';
 
 const Rightbar = () => {
+  const {user} = useContext(UserContext);
+  console.log('user',user)
   return (
     <div className='right-bar'>
       <div className='sponsor'>
@@ -15,7 +18,12 @@ const Rightbar = () => {
       <Divider/>
       <div className='contacts'>
         <h4>contacts</h4>
-         <ConservationComponent name='gharis' group={false} img='https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80'/>
+        {
+          user && user.map(user=>(
+              <ConservationComponent key={user.id} name={user.name} group={false} img={`https://avatars.dicebear.com/api/human/${user.id}.svg`}/>
+          ))
+        }
+         
       </div>
       <Divider/> 
       <div className='group'>

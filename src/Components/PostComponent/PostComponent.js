@@ -9,12 +9,15 @@ import ShareIcon from '@mui/icons-material/Share';
 import './PostComponent.css'
 
 
-const PostComponent = () => {
+const PostComponent = ({title,url}) => {
   return (
     <div className='post-componet'>
         <div className='post-top'>
             <div className='top-left'>
-                <Avatar/>
+                < Avatar src = {
+                    `https://avatars.dicebear.com/api/:sprites/:${title}.svg`
+                }
+                />
                 <div className='time-stamp'>
                     <p>Name</p>
                     <div className='stamp'>
@@ -32,8 +35,8 @@ const PostComponent = () => {
 
         </div>
         <div className='post-body'>
-            <span>erwer ewrwerwrwsdfew erwer ewrw</span>
-            <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'/>
+            <span>{title}</span>
+            <img src={url}/>
         </div>
         <div className='post-bottom'>
             <IconButton>
