@@ -15,7 +15,7 @@ const Leftbar = () => {
                 <List>
                     {
                         ListData.map((data)=>(
-                            <SideBarComponent data={data}/>
+                            <SideBarComponent key={data.name} data={data}/>
                         ))
                     }  
                 </List>

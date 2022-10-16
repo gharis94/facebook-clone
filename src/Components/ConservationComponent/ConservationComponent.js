@@ -4,7 +4,7 @@ import './ConservationComponent.css';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const ConservationComponent = ({group,name,img,creategroup}) => {
-    console.log(creategroup)
+    
   return (
       <>
         {
