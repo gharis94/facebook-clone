@@ -19,7 +19,7 @@ function App() {
           <Route path='/profile' element={<Profile/>}/>
         </Route>
         ):(
-          <Route  path='/' element={<Auth/>}/>
+          <Route  path='/' index element={<Auth/>}/>
         )}
         
       </Routes>

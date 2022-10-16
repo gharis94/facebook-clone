@@ -14,7 +14,7 @@ export const UserProvider = ({children}) =>{
         const fetchData =async() =>{
             const rsp = await fetch('https://jsonplaceholder.typicode.com/users');
             const data = await rsp.json();
-            setUser(data);
+            //setUser(data);
         }
         fetchData();
     },[])
