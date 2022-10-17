@@ -11,8 +11,12 @@ import WidgetsIcon from '@mui/icons-material/Widgets';
 import ChatIcon from '@mui/icons-material/Chat';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import {useSelector} from 'react-redux'
+import {userSelector} from '../../store/user/userSelector'
 
 const Header = () => {
+    const {user} =useSelector(userSelector)
+    console.log(user.photoURL)
     const [search,setSearch]=useState('')
     const handleChange=(e)=>{
         setSearch(e.target.value)
@@ -33,8 +37,8 @@ const Header = () => {
             </div>
             <div className='right'>
                 <div className='right-name'>
-                    <Avatar/>
-                    <span>name</span>
+                    <Avatar src={user.photoURL.toString()}/>
+                    <span>{user.displayName}</span>
                 </div>
                 <WidgetsIcon/>
                 <ChatIcon/>

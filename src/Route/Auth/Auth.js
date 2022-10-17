@@ -7,11 +7,13 @@ import SignUp from '../../Components/SignUp/SignUp'
 const Auth = () => {
   return (
     <Container>
+      
       <Routes>
-        <Route path='/'  element={<SignIn/>}/>
-        <Route path='signup' element={<SignUp/>}/> 
+        <Route  path='/'  element={<SignIn/>}/>
+        <Route  path='signup' element={<SignUp/>}/>
+        
+         
       </Routes>
-
     </Container>
   )
 }

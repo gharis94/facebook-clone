@@ -8,14 +8,14 @@ import { DataContext } from '../../context/DataContext';
 
 const Center = () => {
   const {data} = useContext(DataContext);
-
+  
   return (
     <div className = 'center-post'>
         <FeedComponent/>
         <AddPost/>
         {
           data.map(post=>(
-            <PostComponent key={post.id} title={post.title} url={post.url}/>
+            <PostComponent key={post.id} title={post.title} url={null}/>
           ))
         }
     </div>

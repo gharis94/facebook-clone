@@ -31,7 +31,7 @@ const PostComponent = ({title,url}) => {
         <div className='post-top'>
             <div className='top-left'>
                 <Avatar src = {
-                    `https://avatars.dicebear.com/api/:sprites/:${title}.svg`
+                    `https://avatars.dicebear.com/api/pixel-art/:${title}.svg`
                 }
                 />
                 <div className='time-stamp'>

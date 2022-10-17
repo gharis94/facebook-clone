@@ -6,7 +6,8 @@ import {UserContext} from '../../context/UserContext';
 
 const Rightbar = () => {
   const {user} = useContext(UserContext);
-  
+  //const user =''
+  //console.log(x.user)
   return (
     <div className='right-bar'>
       <div className='sponsor'>
@@ -20,7 +21,7 @@ const Rightbar = () => {
         <h4>contacts</h4>
         {
           user && user.map(user=>(
-              <ConservationComponent key={user.id} name={user.name} group={false} img={`https://avatars.dicebear.com/api/human/${user.id}.svg`}/>
+              <ConservationComponent key={user.id} name={user.name} group={false} img={`https://avatars.dicebear.com/api/pixel-art/${user.id}.svg`}/>
           ))
         }
          

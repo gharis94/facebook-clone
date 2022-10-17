@@ -6,7 +6,7 @@ const CommentComponent = ({comment}) => {
     const {id,name,body} =comment;
   return (
     <div className='comment-component'>
-        <Avatar src={`https://avatars.dicebear.com/api/human/${id}.svg`}/>
+        <Avatar src={`https://avatars.dicebear.com/api/pixel-art/${id}.svg`}/>
         <div className='comment-details'>
             <h4>{name}</h4>
             <span>{body}</span>

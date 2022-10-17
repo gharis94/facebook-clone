@@ -8,9 +8,11 @@ import MoodIcon from '@mui/icons-material/Mood';
 import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
 import ClearIcon from '@mui/icons-material/Clear';
-
+import { userSelector } from '../../store/user/userSelector'; 
+import { useSelector } from 'react-redux';
 
 const AddPost = () => {
+    const {user}=useSelector(userSelector)
     const [text,setText] = useState('');
     const [isOpen,setIsOpen] = useState(false);
 
@@ -67,7 +69,7 @@ const AddPost = () => {
         <div className='add-post'>
 
             <div className='add-post-top'>
-                <Avatar/>
+                <Avatar src={user.photoURL.toString()}/>
                 <form onSubmit={(e)=>handleSubmit(e)}>
                     <input placeholder={`What's on your mind,name?`} type='text' onClick={()=>handlePop()}/>
                 </form>
