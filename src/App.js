@@ -6,17 +6,17 @@ import Home from './Route/Home.js/Home';
 import Profile from './Route/Profile/Profile';
 import {useDispatch, useSelector} from 'react-redux'
 import Auth from './Route/Auth/Auth'
-import { onAuthChange } from './utils/firebase';
+import { onAuthChange,signOutF } from './utils/firebase';
 import {setCurrentUser} from './store/user/userAction'
 import {userSelector} from './store/user/userSelector'
 
 function App() {
-  const {isLogIn} = useSelector(userSelector)
+  const {user} = useSelector(userSelector)
   const dispatch = useDispatch()
-  
+    
   useEffect(()=>{
-    const unsubscribe = onAuthChange((user)=>{
-      dispatch(setCurrentUser(user))
+    const unsubscribe = onAuthChange((x)=>{
+      dispatch(setCurrentUser(x))
     })
     return unsubscribe
   },[])
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       
-        {isLogIn? (
+        {user? (
           <Routes >
             <Route path='/' element={<Header/>}>
               <Route  index element={<Home/>}/>

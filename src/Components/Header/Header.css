@@ -41,6 +41,7 @@
     padding-left: 10px;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 @media screen and (max-width:800px) {

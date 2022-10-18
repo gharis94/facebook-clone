@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
-import {UserProvider} from './context/UserContext';
 import { Provider } from 'react-redux';
 import {store} from './store/store'
 
@@ -14,9 +13,7 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <DataProvider>
-        <UserProvider>
           <App />
-        </UserProvider>
       </DataProvider>
     </BrowserRouter>
   </Provider>

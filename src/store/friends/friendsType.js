@@ -1,0 +1,6 @@
+export const SET_FRIEND ={
+    IS_CHAT_OPEN:"IS_CHAT_OPEN",
+    FRIEND_LIST: "FRIEND_LIST",
+    GROUP_LIST:"GROUP_LIST"
+}
+

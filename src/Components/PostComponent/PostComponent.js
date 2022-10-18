@@ -20,9 +20,9 @@ const PostComponent = ({title,url}) => {
     };
 
     const increment =(count)=>{
-        console.log(count)
+        
         const updated = count+1;
-        console.log(updated)
+        
         setLike(updated);
     }
 

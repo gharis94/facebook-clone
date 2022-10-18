@@ -1,7 +1,7 @@
 import {SET_USER} from './userType'
 const INITIAL_STATE={
-    isLogIn:false,
-    user:{}
+    
+    user:null
 }
 
 
@@ -12,7 +12,7 @@ export const userReducer =(state=INITIAL_STATE,action={})=>{
         case SET_USER.USER_ISLOGIN:
             return{
                 ...state,
-                isLogIn:true,
+                
                 user:payload
             }
         default:

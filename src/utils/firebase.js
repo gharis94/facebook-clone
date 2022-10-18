@@ -36,7 +36,7 @@ export const signInWithEmail =async(email,password)=>{
     return rsp    
 }
 
-export const SignOutF =async()=>await signOut(auth)
+export const signOutF =async()=>await signOut(auth)
 
 export const onAuthChange =(callback)=> onAuthStateChanged(auth,callback)
 
